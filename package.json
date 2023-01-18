@@ -3,6 +3,8 @@
   "version": "1.0.3",
   "private": false,
   "description": "Koa prometheus middleware",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
   "keywords": [
     "koa",
     "discordx",
@@ -13,27 +15,14 @@
     "metrics",
     "grafana"
   ],
-  "homepage": "https://github.com/discordx-ts/koa-prometheus-middleware#readme",
-  "bugs": {
-    "url": "https://github.com/discordx-ts/koa-prometheus-middleware/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/discordx-ts/koa-prometheus-middleware.git"
+    "url": "git+https://github.com/KotRikD/koa-prometheus-middleware.git"
   },
   "license": "Apache-2.0",
   "author": "Vijay Meena <indianoceanroleplay@gmail.com> (https://github.com/samarmeena)",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./build/esm/index.js",
-      "require": "./build/cjs/index.js"
-    }
-  },
-  "main": "./build/cjs/index.js",
-  "module": "./build/esm/index.js",
   "files": [
-    "build",
+    "dist",
     "CHANGELOG.md",
     "LICENSE",
     "README.md",
@@ -41,9 +30,8 @@
     "package.json"
   ],
   "scripts": {
-    "build": "tsc && npm run build:cjs",
-    "build:changelog": "npx @discordx/changelog@latest --src src",
-    "build:cjs": "tsc --module CommonJs --outDir build/cjs",
+    "build": "tsc",
+    "prepublish": "tsc",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint ./",

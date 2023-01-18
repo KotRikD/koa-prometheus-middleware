@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "rootDir": "src",
-    "outDir": "build/esm",
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "./dist",
     "moduleResolution": "Node",
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
