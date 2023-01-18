@@ -32,7 +32,7 @@
   "scripts": {
     "build": "tsc",
     "prepublish": "tsc",
-    "install": "tsc",
+    "install": "npm run build",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
     "lint": "eslint ./",
