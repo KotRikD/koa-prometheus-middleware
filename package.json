@@ -3,8 +3,8 @@
   "version": "1.0.3",
   "private": false,
   "description": "Koa prometheus middleware",
-  "main": "dist/lib.js",
-  "types": "dist/lib.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "koa",
     "discordx",
